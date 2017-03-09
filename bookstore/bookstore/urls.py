@@ -21,4 +21,5 @@ from store import views
 urlpatterns = [
     url(r'^store/', include('store.urls'), name='store'),
     url(r'^admin/', admin.site.urls),
+    url(r'^redd/', views.redd)
 ]
