@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+<form method="post" action=".">
+  <!-- This is a template tag This is outputting a cross site request forgery token Security preventions -->
+
+  {% csrf_token %}
+  <!-- # This is a template variable
+  # This is passed in from the view -->
+
+  {{form.as_p}}
+  <input type="submit" value="Register" />
+</form>
+
+</body>
+</html>

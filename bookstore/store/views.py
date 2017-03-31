@@ -4,6 +4,7 @@ from models import Book
 
 
 def index(request):
+    Jared = Yeah()
     return render(request, 'template.html')
 
 def store(request):
